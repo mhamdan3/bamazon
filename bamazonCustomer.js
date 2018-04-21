@@ -22,7 +22,6 @@ var connection = mysql.createConnection({
 
 var ask = function(){
    
-   
    // request details from all available items to purchase from 
 	connection.query("SELECT * FROM products", function(err, results) {
         if (err) throw err;
